@@ -2,13 +2,13 @@ import java.util.ArrayList;
 import java.util.Collections;
 
 /*
-*
-* Program executes in O(nlogn)
-* It sorts the array and arrange the array according to requriment (long story was written on Hackerrank)
-*
-*/
+ * Part of goDaddy Coding Challenge
+ * Program executes in O(nlogn)
+ * It sorts the array and arrange the array according to requirement
+ * long story was written on Hackerrank could not remember but it passed all test cases in less than 0.2 seconds
+ */
 
-public class goDaddyCodingChallenge {
+public class zigzagArray {
 
 public static void main(String[] args) {
 
@@ -29,7 +29,7 @@ static void zigzag(int[] intArr) {
 																inputArr.add(intArr[i]);
 								}
 
-								// sort the array
+								// sort the array - uses merge sort - O(nlogn)
 								Collections.sort(inputArr);
 
 								int size = inputArr.size();
